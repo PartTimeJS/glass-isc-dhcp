@@ -10,7 +10,7 @@ router.get('/', authorize.auth, function(req, res, next) {
 
     content = template_render.get_template("hosts_manager");
     
-    console.log(content);
+    
 
 	/* Read Config */
 	var json_file = require('jsonfile');
@@ -19,10 +19,10 @@ router.get('/', authorize.auth, function(req, res, next) {
 	content = template_render.set_template_variable(content, "title", "Hosts Manager");
 	content = template_render.set_template_variable(content, "c_content", "");
 	content = template_render.set_template_variable(content, "hostlist_location", glass_config.hostlist_file);
-
+    console.log('1',content);
 	var hostlist_config = fs.readFileSync(glass_config.hostlist_file, 'utf8');
 	content = template_render.set_template_variable(content, "hostlist_content", hostlist_config);
-
+    console.log('2',content);
 	res.send(template_render.get_index_template(content, req.url));
 });
 
