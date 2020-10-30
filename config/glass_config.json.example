@@ -1,0 +1,20 @@
+{
+  "admin_user": "",
+  "admin_password": "",
+  "leases_file": "/var/lib/dhcp/dhcpd.leases",
+  "log_file": "/var/log/messages",
+  "config_file": "/etc/dhcp/dhcpd.conf",
+  "hostlist_file": "/etc/dhcp/known-hosts.list",
+  "subnet_file": "/etc/dhcp/subnets.list",
+  "shared_network_critical_threshold": "95",
+  "shared_network_warning_threshold": "0",
+  "slack_webhook_url": "",
+  "slack_alert_channel": "",
+  "leases_per_minute_threshold": "300",
+  "ip_ranges_to_allow": [
+    ""
+  ],
+  "email_alert_to": "",
+  "sms_alert_to": "",
+  "ws_port": 8080
+}
