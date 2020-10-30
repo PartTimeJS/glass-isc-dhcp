@@ -1,7 +1,7 @@
 {
   "admin_user": "server",
   "admin_password": "Kn33C@p!",
-  "leases_file": "/var/lib/dhcpd/dhcpd.leases",
+  "leases_file": "/var/lib/dhcp/dhcpd.leases",
   "log_file": "/var/log/messages",
   "config_file": "/etc/dhcp/dhcpd.conf",
   "hostlist_file": "/etc/dhcp/known-hosts.list",
