@@ -8,7 +8,9 @@ router.get('/', authorize.auth, function(req, res, next) {
 
 	var content = "";
 
-	content = template_render.get_template("hosts_manager");
+    content = template_render.get_template("hosts_manager");
+    
+    console.log(content);
 
 	/* Read Config */
 	var json_file = require('jsonfile');
